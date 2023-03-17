@@ -1,0 +1,41 @@
+.posts-items{
+    width: 90%;
+    height: auto;
+    margin: 30px auto; 
+    border: 1px solid;
+    border-color: rgba(232, 230, 230, 0.99);
+
+    .posts-items-image{
+        width: 100%;
+        height: 160px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .posts-items-text{
+        padding: 30px;
+        height: 140px;
+        box-sizing: border-box;
+        position: relative;
+        
+        .posts-items-text-title{
+            box-sizing: border-box;
+        }
+
+        .posts-items-text-comments{
+            width: 80%;
+            border-top: 1px solid;
+            border-color: rgba(232, 230, 230, 0.99);
+            position: absolute;
+            bottom: 0;
+
+            p{
+                margin: 10px 0;
+            }
+        }
+    }
+
+}

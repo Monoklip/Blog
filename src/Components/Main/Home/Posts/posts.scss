@@ -1,0 +1,11 @@
+.posts{
+    width: 72%;
+    margin: 150px auto;
+    color: rgb(54,64,55);
+
+    .posts-item{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
