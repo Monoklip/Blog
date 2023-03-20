@@ -9,7 +9,7 @@ const Posts = (props: { dataPosts: any; }) => {
         <div className='posts'>
             <h1>Recent Posts</h1>
             <div className="posts-item">
-                {dataPosts.map((elem: { title: string; id: number; url: string; text: string; }) =>{
+                {dataPosts.map((elem: { title: string; id: number; url: string; text: string; comments: number; like: number; }) =>{
                     return <PostsItems elem={elem} key={elem.id}/>
                 })}
             </div>

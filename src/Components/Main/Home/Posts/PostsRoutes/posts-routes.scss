@@ -1,0 +1,38 @@
+.posts-routes{
+    width: 50%;
+    position: relative;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    .posts-routes-title{
+        text-align: center;
+        font-size: 50px;
+        font-family: cursive;
+        margin: 20px;
+    }
+    .posts-routes-image{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+    .posts-routes-counter{
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+            width: 15px;
+            cursor: pointer;
+        }
+        span{
+            margin-left: 10px;
+        }
+    }
+    .posts-routes-text{
+        margin: 20px;
+        font-family: cursive;
+    }
+}

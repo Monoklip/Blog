@@ -1,25 +1,35 @@
+import { Link } from 'react-router-dom';
 import './posts-items.scss';
 
-const PostsItems = (props: {elem: { title: string; id: number; text: string; url: string; }}) => {
+const PostsItems = (props: {elem: { title: string; id: number; text: string; url: string; comments: number; like: number; }}) => {
     const {
         title,
         url,
         id,
-        text
+        text,
+        like,
+        comments
     } = props.elem;
 
     return(
         <div className='posts-items'>
-            <div className="posts-items-image">
-                <img src={`${url}`} alt="" />
-            </div>
-            <div className="posts-items-text">
-                <div className="posts-items-text-title">
+            <Link to={`./blog/${id}`}>
+                <div className="posts-items-image">
+                    <img src={`${url}`} alt="" />
+                </div>
+                <div className="posts-items-title">
                     <h2>{title}</h2>
                 </div>
-                <div className="posts-items-text-comments">
-                    <p>431231212412</p>
-                </div>
+            </Link>
+            <div className="posts-items-comments">
+                <p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/739/739286.png" alt="" />
+                    <span>{comments}</span>
+                </p>
+                <p>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2961/2961957.png" alt="" />
+                    <span>{like}</span>
+                </p>
             </div>
         </div>
     )

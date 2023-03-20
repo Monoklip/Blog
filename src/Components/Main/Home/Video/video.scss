@@ -6,6 +6,31 @@
         height: 900px;
         object-fit: cover;
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+
+        .video-person{
+            width: 210px;
+            min-height: 250px;
+            position: absolute;
+            top: 0;
+            left: 100px;
+            background: #986c43;
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+    
+            .video-person-image{
+    
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
     .video-post{
         height: 400px;
         border: 1px solid;

@@ -1,0 +1,33 @@
+.image{
+    width: 80%;
+    margin: 200px auto;
+
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .image-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            width: 135px;
+            height: 38px;
+            margin: 50px auto;
+            background: #364037;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+    
+            &:hover{
+                background: white;
+                color: #364037;
+                transition: 0.5s;
+                border: 1px solid #364037;
+            }
+        }
+    }
+}

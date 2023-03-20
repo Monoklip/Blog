@@ -2,6 +2,8 @@ import './main.scss';
 import { Routes, Route} from 'react-router-dom';
 import Home from './Home/Home';
 import { useEffect, useState } from 'react';
+import PostsRoutes from './Home/Posts/PostsRoutes/PostsRoutes';
+import Blog from './Blog/Blog';
 
 const Main = () => {
 
@@ -21,6 +23,10 @@ const Main = () => {
     return(
         <Routes>
             <Route path='/' element={<Home dataPosts={dataPosts}/>}></Route>
+            <Route path='/blog' element={<Blog/>}></Route>
+            {dataPosts.map((elem: { title: string; text: string; id: number; url: string; like: number; comments: number; }) => {
+                return <Route path={`/blog/${elem.id}`} element={<PostsRoutes elem={elem} key={elem.id}/>}></Route>
+            })}
         </Routes>
     )
 };

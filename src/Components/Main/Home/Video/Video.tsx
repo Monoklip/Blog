@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './video.scss';
 
 const Video = (props: { dataPosts: any }) => {
@@ -11,6 +12,17 @@ const Video = (props: { dataPosts: any }) => {
     return(
         <div className='video'>
             <video loop={true} autoPlay={true} controls={false} muted={true} src={video}></video>
+            <Link to={'./blog'}>
+                <div className="video-person">
+                    <div className="video-person-image">
+                        <img src="https://static.wixstatic.com/media/2e2a49_d456d06d41b346d3b36f426cb4142859~mv2.jpg/v1/crop/x_1646,y_0,w_3950,h_3840/fill/w_144,h_140,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GettyImages-1145254743.jpg" alt="" />
+                    </div>
+                    <div className="video-person-text">
+                        <h1>Welcome</h1>
+                        <p>Join my journey</p>
+                    </div>
+                </div>
+            </Link>
             <div className="video-post">
                 <h1>Featured Post</h1>
                 <div className="video-post-content">

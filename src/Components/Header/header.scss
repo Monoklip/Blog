@@ -3,7 +3,60 @@
     height: 110px;
     background: #364037;
     position: fixed;
-    padding: 0 100px;
     box-sizing: border-box;
     z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color: #f1d3b7;
+
+        .header-logo{
+            h1{
+
+            }
+            p{
+                font-family: system-ui;
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    .header-sing_in{
+        width: 120px;
+        height: 40px;
+        border: 1px solid #364037;
+        color: #f1d3b7;
+        background: #364037;
+        font: 20px monospace;
+        cursor: pointer;
+
+        &:hover{
+            color: red;
+        }
+    }
+
+    .header-menu{
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            font-size: 20px;
+            font-family: monospace;
+            border: 1px solid #364037;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover{
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
 }
