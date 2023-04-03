@@ -8,7 +8,7 @@ const Image = () => {
     const [image2, setImage2] = useState<boolean>(false);
    
     const [dataPosts, setDataPosts] = useState([]);
-    const [url, setUrl] = useState<string>(' http://localhost:3000/image');   
+    const [url, setUrl] = useState<string>('https://641ca6da1a68dc9e460eba57.mockapi.io/image');   
 
     const getPosts = async() => {
         const response = await fetch(url);
