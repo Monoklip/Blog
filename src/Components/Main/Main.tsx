@@ -34,8 +34,8 @@ const Main = () => {
 
     return(
         <Routes>
-            <Route path='/' element={<Home dataPosts={dataPosts}/>}></Route>
-            <Route path='/blog' element={<Blog/>}></Route>
+            <Route path='/Blog' element={<Home dataPosts={dataPosts}/>}></Route>
+            <Route path='/myblog' element={<Blog/>}></Route>
             <Route path='/about' element={<About/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
             {dataPosts.map((elem: { title: string; text: string; id: number; url: string; like: number; comments: number; }) => {
